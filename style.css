@@ -1,22 +1,38 @@
 body {
+    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 1;
 }
 
+.container-main {
+    width: 80%;
+    margin-left: 120px;
+}
+
 textarea {
     background: transparent;
-    border-left: 1px solid black;
+    border-left: 2px solid black;
+    text-align: center;
+    width: 80%;
 }
 
 .jumbotron {
     text-align: center;
-
+    border-bottom: 10px solid black;
+    background-color: transparent;
 }
 
 .hour {
     text-align: center;
     padding: 10px;
+}
+
+.time {
+    border-style: dashed;
+    border-color: black;
+    border: 1px solid black;
+    text-align: center;
 }
 
 .past {
@@ -30,3 +46,48 @@ textarea {
 .future {
     background-color: lightgreen;
 }
+
+.saveBtn {
+    background-color: rgb(0, 162, 255);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 10%;
+}
+
+
+  
+  @media only screen and (max-width: 768px) {
+    /* For desktop: */
+    .col {width: 100%;}
+
+    .container-main {
+        width: 80%;
+        margin-left: 80px;
+    }
+
+    .saveBtn {
+        background-color: rgb(0, 162, 255);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 100%;
+    }
+  } 
+
+  @media only screen and (max-width: 650px) {
+    /* For desktop: */
+    .col {width: 100%;}
+
+    .container-main {
+        width: 80%;
+        margin-left: 40px;
+    }
+
+    .saveBtn {
+        background-color: rgb(0, 162, 255);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 100%;
+    }
+  } 
+
+  
