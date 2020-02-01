@@ -21,7 +21,6 @@ $(document).ready(function() {
         var taskContent = $(this).siblings(".taskarea").val();
         var time = $(this).parent().attr("id");
         localStorage.setItem(time, taskContent);
-      //  localStorage.setItem(time, JSON.stringify(taskContent));
        console.log(time, taskContent);
 
     });
@@ -39,11 +38,6 @@ $(document).ready(function() {
     getData();
 
     //get values from localStorage when page is refreshed
- /*   function getStorageLocal() {
-        for (var i = 9; i < 18; i++) {
-            $("taskarea" + i).val(localStorage.getItem("#event" + i));
-        }
-    }  */
     function getStorageLocal() {
         $(".9").val(localStorage.getItem("event9a"));
         $(".10").val(localStorage.getItem("event10a"));
